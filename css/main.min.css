@@ -302,7 +302,8 @@ input[type=submit]:hover {
 .footer {
 	display: block;
 	width: 100%;
-	background-color: #040405
+	background-color: #040405;
+	padding: 0px 20px;
 }
 .footer__wrapper {
 	display: -ms-flexbox;
@@ -344,7 +345,7 @@ input[type=submit]:hover {
 	display: block;
 	color: #fff;
 	text-decoration: none;
-	white-space: nowrap
+	white-space: nowrap;
 }
 .footer__social {
 	display: -ms-flexbox;
@@ -2337,6 +2338,10 @@ input[type=submit]:hover {
 	display: none;
 }
 
+.block__title{
+	display: none;
+}
+
 @media only screen and (max-width: 1900px){
 
 }
@@ -2354,6 +2359,84 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 992px) {
+
+	.footer__nav-item:not(:last-child){
+		margin: 0px 0px 10px;
+	}
+
+	.block__title{
+		display: block;
+		position: relative;
+		width: 100%;
+		background-color: #09090c;
+		border: 1px solid #38383a;
+		border-radius: 6px;
+		padding: 10px 20px;
+		margin: 0px 0px 20px;
+	}
+
+	.block__title::before, .block__title::after{
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 1px;
+		top: 50%;
+		transform: translate(0%, -50%);
+		background-color: #fff;
+		-webkit-transition: all 300ms ease 0ms;
+		transition: all 300ms ease 0ms;
+	}
+	.block__title::before {
+		-webkit-transform: rotate(40deg);
+		transform: rotate(40deg);
+		right: 14px;
+	}
+
+	.block__title::after{
+		-webkit-transform: rotate(-40deg);
+		transform: rotate(-40deg);
+		right: 7px;
+	}
+
+	.block__title.footer-active::after {
+		-webkit-transform: rotate(40deg);
+		transform: rotate(40deg);
+	}
+	.block__title.footer-active::before {
+		-webkit-transform: rotate(-40deg);
+		transform: rotate(-40deg);
+	}
+
+	.block__title.footer-active::before, .block__title.footer-active::after {
+		background-color: #05c2b6;
+	}
+	.block__text{
+		display: none;
+		border-radius: 18px;
+		border: 1.3px solid #05c2b6;
+		padding: 20px;
+		width: 100%;
+		max-width: none;
+		margin: 0px 0px 20px;
+	}
+
+	.block__text.footer-active{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer__wrapper{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.footer__social{
+		justify-content: center;
+	}
+
+	.footer__logo{
+		margin: 0px 0px 40px;
+	}
 
 	.header__burger{
 		display: block;
@@ -2674,7 +2757,7 @@ input[type=submit]:hover {
 	}
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 640px) {
 	.footer__wrapper{
 		flex-wrap: wrap;
 		padding: 43px 20px;
