@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" type="text/css"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="css/main.min.css" type="text/css" rel="stylesheet" />
+</head>
+
+</html>
+
+<body>
+    <div class="body-wrapper">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__logo"><a href="/"><img src="img/logo.svg" width="58" height="59"
+                            alt="Andromeda"></a></div>
+                <div class="header__nav"><a class="header__nav-item" href="#">Преимущества</a><a
+                        class="header__nav-item" href="#">Структура курса</a><a class="header__nav-item"
+                        href="#">Привелегии</a><a class="header__nav-item" href="#">Тарифы</a><a
+                        class="header__nav-item" href="#">FAQ</a><a class="header__nav-item" href="#">Контакты</a></div>
+                <div class="header__profile"><a class="button button--icon button--profile" href="#">Профиль</a></div>
+            </div>
+        </header>
+        <main>
+            <div class="news">
+                <div class="news__infoblock">
+                    <h2><span>Главное</span> за сегодня</h2>
+                    <p>Здесь вы сможете увидеть актуальные события, связанные с P2P и нашим курсом, актуальный курс и
+                        многое другое.</p><a class="button button--big">Перейти к курсу</a>
+                </div>
+                <div class="news__slider">
+                    <div class="slider-news">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card-news" onclick="Modal.open('.modal-current-course')">
+                                        <div class="card-news__image"><img src="img/news/news-1.png" alt="" /></div>
+                                        <div class="card-news__title">P2P <span>уебался</span>, мы миллионеры</div>
+                                        <div class="card-news__desc">По многочисленным просьбам и совместными с вами
+                                            коллеги решениями...</div>
+                                        <div class="card-news__more"><a href="#">Подробнее</a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-news" onclick="Modal.open('.modal-current-course')">
+                                        <div class="card-news__image"><img src="img/news/news-2.png" alt="" /></div>
+                                        <div class="card-news__title">P2P <span>уебался</span>, мы миллионеры</div>
+                                        <div class="card-news__desc">По многочисленным просьбам и совместными с вами
+                                            коллеги решениями...</div>
+                                        <div class="card-news__more"><a href="#">Подробнее</a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-news" onclick="Modal.open('.modal-current-course')">
+                                        <div class="card-news__image"><img src="img/news/news-3.png" alt="" /></div>
+                                        <div class="card-news__title">P2P <span>уебался</span>, мы миллионеры</div>
+                                        <div class="card-news__desc">По многочисленным просьбам и совместными с вами
+                                            коллеги решениями...</div>
+                                        <div class="card-news__more"><a href="#">Подробнее</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal-current-course">
+                <div class="modal-wrapper">
+                    <div class="modal-content">
+                        <div class="modal-close" onclick="Modal.close()"></div>
+                        <div class="current-course">
+                            <div class="current-course__infoblock">
+                                <h3><span>Актуальный</span> курс</h3>
+                                <p>Здесь вы сможете увидеть актуальные события, связанные с P2P и нашим курсом,
+                                    актуальный курс и многое другое.</p>
+                            </div>
+                            <div class="current-course__table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Price</td>
+                                            <td>Market Cap</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>BTC</td>
+                                            <td>$16,103.78</td>
+                                            <td>$310,927,533,210</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ETH</td>
+                                            <td>$15.313</td>
+                                            <td>$110,921,555,210</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SQL</td>
+                                            <td>$4,567</td>
+                                            <td>$17,375,242,019</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FRX</td>
+                                            <td>$12.213</td>
+                                            <td>$310,927,533,210</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BNB</td>
+                                            <td>$0.441</td>
+                                            <td>$336,787,981,345</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__logo"><a href="/"><img src="img/logo.svg" width="72" height="74"
+                            alt="Andromeda"></a></div>
+                <div class="footer__nav"><a class="footer__nav-item" href="#">Преимущества</a><a
+                        class="footer__nav-item" href="#">Структура курса</a><a class="footer__nav-item"
+                        href="#">Привелегии</a><a class="footer__nav-item" href="#">Тарифы</a><a
+                        class="footer__nav-item" href="#">FAQ</a><a class="footer__nav-item" href="#">Контакты</a></div>
+                <div class="footer__social"><a class="footer__social-item" href="#"><img src="img/social-icon/tg.svg"
+                            width="53" height="53" alt="tg"></a><a class="footer__social-item" href="#"><img
+                            src="/img/social-icon/youtube.svg" width="53" height="53" alt="youtube"></a><a
+                        class="footer__social-item" href="#"><img src="img/social-icon/mail.svg" width="53" height="53"
+                            alt="mail"></a></div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
