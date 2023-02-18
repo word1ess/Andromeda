@@ -76,6 +76,10 @@ body {
 		overflow: auto
 	}
 } */
+
+* {
+	box-sizing: border-box
+}
 .body-wrapper {
 	-ms-flex-direction: column;
 	flex-direction: column;
@@ -764,7 +768,7 @@ input[type=submit]:hover {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 2
+	z-index: 6
 }
 .modal-wrapper {
 	display: -ms-flexbox;
@@ -2632,10 +2636,10 @@ input[type=submit]:hover {
 		width: 100%;
 		height: 100%;
 		font-size: 18px;
-		background-color: rgba(0, 0, 0, 0.8);
-		padding: 150px 30px 30px;
+		background-color: rgba(0, 0, 0, 1);
+		padding: 0px 30px;
 		transition: transform 300ms ease 0ms, opacity 400ms ease-in 300ms;
-		z-index: 0;
+		z-index: 3;
 	}
 
 	.header__nav-item:not(:last-child){
@@ -2663,7 +2667,7 @@ input[type=submit]:hover {
 	.header__nav.burger-active{
 		transform: translate(0%, 0%);
 		opacity: 1;
-		z-index: 0;
+		z-index: 3;
 		
 	}
 	.header__logo, .header__profile{
@@ -2829,7 +2833,7 @@ input[type=submit]:hover {
 	}
 
 	.news__slider{
-		padding: 0px;
+		padding: 0px 0px 20px;
 	}
 
 	.profile{
@@ -2853,6 +2857,18 @@ input[type=submit]:hover {
 		width: 100%;
 		padding: 20px;
 	}	
+	.main__section--faq{
+		padding-bottom: 20px;
+	}
+	.main-pa__image{
+		margin: 0px;
+	}
+	.news__slider .swiper-slide{
+		width: 100%;
+	}
+	.card-news{
+		margin: 0 auto;
+	}
 
 }
 
@@ -2906,6 +2922,19 @@ input[type=submit]:hover {
 	.academy__pagination-label{
 		font-size: 15px;
 	}
+
+	.main-structure__spoilers .spoiler:nth-child(2),
+	.main-structure__spoilers .spoiler:nth-child(3),
+	.main-structure__spoilers .spoiler:nth-child(4),
+	.main-structure__spoilers .spoiler:nth-child(5),
+	.main-structure__spoilers .spoiler:nth-child(6),
+	.main-structure__spoilers .spoiler:nth-child(7),
+	.main-structure__spoilers .spoiler:nth-child(8),
+	.main-structure__spoilers .spoiler:nth-child(9),
+	.main-structure__spoilers .spoiler:nth-child(10)
+	{
+		transition-delay: 0ms;
+	}
 }
 
 @media only screen and (max-width: 640px) {
@@ -2957,6 +2986,27 @@ input[type=submit]:hover {
 		max-width: none;
 		width: 100%;
 	}
+	.main-advantages__grid{
+		margin: 0px;
+		width:fit-content;
+		grid-template-columns: 1fr;
+	}
+	.card-news{
+		width: 100%;
+	}
+	.spoiler__top-status{
+		justify-content: flex-end;
+		margin-left: 0px auto;
+	}
+	.main .spoiler__top-title{
+		font-size: 20px;
+	}
+	.main-structure__spoilers .spoiler__top{
+		padding: 17px 15px;
+	}
+	.main__section--faq{
+
+	}
 }
 
 
@@ -2975,5 +3025,7 @@ input[type=submit]:hover {
 		margin: 0px;
 	}
 
-
+	.main-contacts__info-item-icon{
+		margin-right: 15px;
+	}
 }
