@@ -44,16 +44,17 @@
         </header>
         <main>
             <div class="news">
-                <div class="news__infoblock">
+                <div class="news__infoblock anim-items anim-items__opacity anim-items__translate-left anim-no-hide">
                     <h2><span>Главное</span> за сегодня</h2>
                     <p>Здесь вы сможете увидеть актуальные события, связанные с P2P и нашим курсом, актуальный курс и
-                        многое другое.</p><a class="button button--big">Перейти к курсу</a>
+                        многое другое.</p>
+                    <a class="button button--big anim-items anim-items__opacity anim-items__translate-bottom anim-no-hide">Перейти к курсу</a>
                 </div>
                 <div class="news__slider">
                     <div class="slider-news">
                         <div class="swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
+                                <div class="swiper-slide anim-items anim-items__opacity anim-items__translate-right anim-no-hide">
                                     <div class="card-news" onclick="Modal.open('.modal-current-course')">
                                         <div class="card-news__image"><img src="img/news/news-1.png" alt="" /></div>
                                         <div class="card-news__title">P2P <span>уебался</span>, мы миллионеры</div>
@@ -62,7 +63,7 @@
                                         <div class="card-news__more"><a href="#">Подробнее</a></div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide anim-items anim-items__opacity anim-items__translate-right anim-no-hide">
                                     <div class="card-news" onclick="Modal.open('.modal-current-course')">
                                         <div class="card-news__image"><img src="img/news/news-2.png" alt="" /></div>
                                         <div class="card-news__title">P2P <span>уебался</span>, мы миллионеры</div>
@@ -71,7 +72,7 @@
                                         <div class="card-news__more"><a href="#">Подробнее</a></div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide anim-items anim-items__opacity anim-items__translate-right anim-no-hide">
                                     <div class="card-news" onclick="Modal.open('.modal-current-course')">
                                         <div class="card-news__image"><img src="img/news/news-3.png" alt="" /></div>
                                         <div class="card-news__title">P2P <span>уебался</span>, мы миллионеры</div>
@@ -171,6 +172,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
