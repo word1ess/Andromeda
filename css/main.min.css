@@ -2515,9 +2515,17 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 992px) {
 
+	.main-structure__spoilers, .swiper-slide,.main-advantages__grid {
+		margin-right: 0px !important;
+	}
+	.swiper-wrapper{
+		gap: 35px;
+	}
+
 	.footer__nav-item:not(:last-child){
 		margin: 0px 0px 10px;
 	}
+
 
 	.block__title{
 		display: block;
