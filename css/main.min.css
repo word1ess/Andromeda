@@ -2491,7 +2491,7 @@ input[type=submit]:hover {
 }
 
 .main-advantages__grid-item{
-	transition: transform 200ms ease-in, outline 20ms ease, all 200ms ease 100ms;
+	transition: transform 200ms ease-in, outline 20ms ease, all 400ms ease 100ms;
 	cursor: pointer;
 }
 
